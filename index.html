@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Adding Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Mini Pokédex</title>
+  </head>
+
+  <body>
+    <div class="headerSection">
+      <h1 class="mainHeader">Bits of Good Mid-Semester Project</h1>
+    </div>
+    <div class="bodySection">
+      <div class="leftSide">
+        <div class="pokeImageDiv leftDiv">
+          <img class="pokeImage" src="" alt="picture of pokemon" />
+        </div>
+        <div class="pokeName leftDiv">ditto</div>
+        <div class="types leftDiv"><p class="typesParagraph">Types:</p></div>
+        <div class="arrows">
+            <button id="leftArrow" class="arrowButton"><img class="arrowImage" src="images/leftArrow.png" alt="<"></button>
+            <button id="rightArrow" class="arrowButton"><img class="arrowImage" src="images/leftArrow.png" alt="<"></button>
+        </div>
+      </div>
+
+      <div class="rightSide">
+        <div class="infoMovesStuff">
+            <div class="infoMoves"><p class="infoMovesParagraph">Info</p></div>
+            <div id="infoBox" class="infoMovesBox"></div>
+            <div id="movesBox" class="hidden infoMovesBox"></div>
+        </div>
+        <div class="infoMovesButtons">
+            <button id="infoButton" class="infoMovesButton selectedButton">Info</button>
+            <button id="movesButton" class="infoMovesButton unselectedButton">Moves</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
